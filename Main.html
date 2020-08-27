@@ -8,51 +8,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="Main-style.css">
+    <!--Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Personal Web Page</title>
 </head>
 <body>
-
     <header>
-          <nav class="navbar navbar-expand-sm bg-dark">
-            <a class="navbar-brand nav-link" href="#">Juan Cañizarez</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">  
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Who am I <span class="sr-only">(current)</span></a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Hobbies</a>
-                </li>
-                <li>
-                    <a class= "nav-link" href="#">Academic life</a>
-                </li>
-              </ul> 
-            </div>
-          </nav>
-        <div class="banner-section">
-            <p class="header-title">A little bit about me</p>
-            <p class="presentation-p">Hello World! I'm Juan Cañizarez </p>
-            <img class="img-personal imagen-fluid rounded" src="./Images/yo.jpg"
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#banner">Juan Cañizarez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#who-am-I">Who am I <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Academic-Life">Academic Life</a>
+            </li>
+          </ul>
         </div>
-       
+      </nav>
+      <div class="container banner-section" id="banner">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="header-title">A little bit about me</h1>
+            <p class="presentation-p">Hello World! I'm Juan Cañizarez</p>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <div class="container-fluid">
-
+        <div class="container-fluid" id="who-am-I">
+          <div class="row">
+            <div class="col-12 black-separator">
+              <h1 class="presentation-p">Who am I</h1>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class= "col-12 ">
+              <img src="./Images/yo.jpg" class="img-fluid img-personal rounded-circle" alt="Personal Image">
+              <p>I'am 19 years old. I born in Floridablanca, Santander. I like to play Ukelele and CyberSecurity.</p>
+              <a href="https://www.facebook.com/juan.canizarezortiz/" class="fa fa-facebook" target="_blank"></a>
+            </div>
+          </div>
         </div>
-
+        <div class="container-fluid" id="Projects">
+          <div class="row">
+            <div class="col-12 black-separator">
+              <h1 class="presentation-p">Projects</h1>
+            </div>
+          </div>
+          <div class="card card-beong">
+            <img class="card-img-top" src="./Images/BeONG.png" alt="Beong Image">
+            <div class="card-body">
+              <h5 class="card-title">BeONG</h5>
+              <p class="card-text">With BeONG you can find a volunteering made for you.</p>
+              <div class="text-center">
+                <a href="https://www.facebook.com/BeONG-102726601385619/" class="btn btn-primary text-center target="_blank">Visit us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="Academic-Life">
+          <div class="row black-separator">
+            <div class="col-12 text-center">
+              <h1 class="presentation-p">Academic Life</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img src="./Images/Salesiano.png" class="img-fluid rounded-circle salesiano-image" alt="Salesiano Photo">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+            </div>
+          </div>
+        </div>
     </main>
     <footer>
         <p>Something</p>
-
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
 </body>
 </html>
