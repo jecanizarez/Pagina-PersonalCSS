@@ -67,11 +67,19 @@
   {
       background-color: black;
   }
-  .salesiano-image
+  .academic-section-image
   {
       float: left;
-      width: 200;
-      height: 200px;
-      padding: 10 10 5 10;
+      width: 150px;
+      height: 150px;
+      padding: 10 10 10 10;
+  }
+  .salesiano-section
+  {
+      margin-top: 10px;
+      border: 1px solid black;
+  }
+  .academic-life-section{
+      padding:10 10 10 10;
   }
   
