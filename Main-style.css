@@ -6,6 +6,9 @@
     font-family: 'Raleway';
 
 }
+p{
+    font-family: 'Raleway';
+}
 .presentation-p{
     font-family: "Raleway";
     color: white;
@@ -77,9 +80,21 @@
   .salesiano-section
   {
       margin-top: 10px;
+      margin-bottom: 10px;
       border: 1px solid black;
   }
   .academic-life-section{
       padding:10 10 10 10;
   }
+  .hobbies-card-group{
+      margin: 10px 10px 10px 10px;
+  }
+  .ukelele-image{
+      height: 250px;    
+      width: 200px;
+  }
+  .footer{
+      background-color:black;
+  }
+
   
